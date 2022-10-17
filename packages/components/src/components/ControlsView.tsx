@@ -67,6 +67,7 @@ export const ControlsView = ({
     const enabled = !(camPub?.isMuted ?? true);
     videoButton = (
       <VideoSelectButton
+        className={styles.controlButton}
         isEnabled={enabled}
         isButtonDisabled={videoButtonDisabled}
         onClick={() => {
@@ -91,6 +92,7 @@ export const ControlsView = ({
     const enabled = room.localParticipant.isScreenShareEnabled;
     screenButton = (
       <ControlButton
+        className={styles.controlButton}
         label={enabled ? 'Stop sharing' : 'Share screen'}
         icon={enabled ? faStop : faDesktop}
         disabled={screenButtonDisabled}

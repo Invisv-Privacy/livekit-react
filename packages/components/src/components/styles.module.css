@@ -68,12 +68,15 @@ video.video {
   color: #981010;
 }
 
+.controlButton {
+
+}
+
 .controlsWrapper {
 }
 
 .buttonWrapper {
   display: inline-block;
-  margin: 4px;
   white-space: nowrap;
 }
 
@@ -88,6 +91,7 @@ video.video {
   font-weight: normal;
   font-size: 14px;
   white-space: nowrap;
+  margin: 4px;
 }
 
 .button:active {
